@@ -107,6 +107,30 @@
             background: #fff880;
         }
 
+        .row-container {
+            display: flex;
+            flex-direction: row;
+            width: 92%;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+            margin: 0 2%;
+        }
+
+        .column-container {
+            flex-grow: 1;
+        }
+
+        .responsive-img1 {
+        background-image: url('doc/chart1.jpg');
+        background-size: 100%;
+        }
+
+        .responsive-img2 {
+        background-image: url('doc/chart2-desktop.jpg');
+        background-size: 100%;
+        }
+
         /* margin on mobile */
         @media (max-width: 640px) {
             body {
@@ -117,10 +141,15 @@
                 padding-right: 0.5em;
             }
             .header {
-            padding: 1em 0 1em 0;
+                padding: 1em 0 1em 0;
             }
+            .row-container {
+                flex-direction: column;
+            }
+            .responsive-img2 {
+            background-image: url('doc/chart2-mobile.png');
         }
-
+        }
     </style>
     </head>
   <body>
@@ -138,10 +167,21 @@
         <p>Chinese New Year in 2024 falls on Feb. 10. A Chinese community in NYC seems to have a renewed enthusiasm for fireworks this year, which also increased 311 complaints as a result.</p>
         <p>Firecrackers are one of the traditions in Chinese New Year, but they are unfortunately banned in New York City, except the governmental Celebration on the Independence Day on July 4th. People can call 311 to complain about fireworks, like any other noise.</p>
         <p>Over three days around Lunar New Year's Eve, from Feb. 9 to 11, New York City's 311 hotline received 255 complaints about fireworks, most of them around Sunset Park in Brooklyn. The number of complaints is even more than the 2024 New Year, when firework complaints scarcely reached 220 in two days across the city.</p>
+        <iframe title="Firework Complaints Concentrated Around Sunset Park in Lunar New Year" aria-label="Map" id="datawrapper-chart-hJ1Ly" src="https://datawrapper.dwcdn.net/hJ1Ly/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="701" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
         <p>Sunset Park has a Chinatown that is one of the largest and fastest growing ethnic Chinese enclaves in NYC. <a href="https://censusreporter.org/profiles/79500US3604307-nyc-brooklyn-community-district-7-sunset-park-windsor-terrace-puma-ny/">Census data</a> shows that 24.7% Asian in the Community Board, and 22% adults speak Asian language (mostly Cantonese and Mandarin) at home. </p>
         <p>Many official events in Asian communities include fireworks this year. On February 11, 2024, a New Year parade was held in Southern Brooklyn. “Opening Ceremony 11:00 A.M. with a speaking program, firecrackers, and performances,” read a description of the event in <a href="https://www.nysenate.gov/newsroom/press-releases/2024/iwen-chu/senator-iwen-chu-celebrates-lunar-new-year-2024-year-dragon">a press release</a> by New York State Senator Iwen Chu. </p>
         <p>The number of people complaining about fireworks more than quadrupled. In previous years, Chinese New Year celebrations in New York City did not lead to a significant increase in firework complaints. In 2023, Chinese New Year falls on January 22, and there were only 46 fireworks complaints in all of New York on those two days. In 2022 and the years before, there were only unit digit complaints and cannot be clearly distinguished from other days.</p>
         <p>After the 2020 covid, 311 fireworks complaints in New York spiked about 4,000%.</p>
+    </div>
+    <div class="row-container">
+        <div class="column-container">
+            <iframe title="Lunar New Year had a firework craze in 2024" aria-label="Interactive line chart" id="datawrapper-chart-iZG4o" src="https://datawrapper.dwcdn.net/iZG4o/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+        </div>
+        <div class="column-container">
+            <iframe title="Which has never been seen before" aria-label="Grouped Bars" id="datawrapper-chart-bIGCO" src="https://datawrapper.dwcdn.net/bIGCO/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="474" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+        </div>
     </div>
     <div class="footer">
         <div class="content">

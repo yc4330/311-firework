@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Images</title>
+<style>
+/* 在移动设备上显示 img1 */
+@media only screen and (max-width: 600px) {
+    .responsive-img {
+        background-image: url('doc/chart2-mobile.png');
+        background-size: cover;
+        /* 设置图像的其他样式，比如宽度和高度 */
+        width: 600px;
+        height: 400px;
+    }
+}
+
+/* 在桌面设备上显示 img2 */
+@media only screen and (min-width: 601px) {
+    .responsive-img {
+        background-image: url('doc/chart2-desktop.jpg');
+        background-size: cover;
+        /* 设置图像的其他样式，比如宽度和高度 */
+        width: 600px;
+        height: 400px;
+    }
+}
+
+.row-container {
+            display: flex;
+            flex-direction: row;
+            width: 92%;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+            margin: 0 2%;
+        }
+
+        .column-container {
+            flex-grow: 1;
+            width: 48%;
+            height: 500px;
+        }
+
+        .responsive-img1 {
+        background-image: url('doc/chart1.jpg');
+        background-size: 100%;
+        }
+
+        .responsive-img2 {
+        background-image: url('doc/chart2-desktop.jpg');
+        background-size: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .row-container {
+                flex-direction: column;
+            }
+            .responsive-img2 {
+            background-image: url('doc/chart2-mobile.png');
+        }
+        }
+</style>
+</head>
+<body>
+<!-- 使用一个 div 元素作为响应式图像的容器 -->
+<div class="responsive-img"></div>
+
+<div class="row-container">
+    <div class="column-container">
+        <img src="doc/chart1.jpg" class="responsive
+    </div>
+    <div class="column-container">
+        <div class="responsive-img2"></div>
+    </div>
+</div>
+</body>
+</html>
